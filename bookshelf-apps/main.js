@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
 function addBook() {
     const inputBookTitle =  document.getElementById('inputBookTitle').value;
     const inputBookAuthor = document.getElementById('inputBookAuthor').value;
-    const inputBookYear = document.getElementById('inputBookYear').value;
+    const inputBookYear = parseInt(document.getElementById('inputBookYear').value);
     const inputBookIsComplete = document.getElementById('inputBookIsComplete').checked;
 
     const generateID = generateId();
